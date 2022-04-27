@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91C45DD8-00D7-46D9-BCDD-F177AD989D87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NguyenMinhTri_20110422_LOGIN_BUOI1</RootNamespace>
+    <AssemblyName>NguyenMinhTri_20110422_LOGIN-BUOI1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc">
+      <HintPath>..\..\..\..\Downloads\123\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>..\..\..\..\Downloads\123\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\..\..\..\Downloads\123\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNT.cs" />
+    <Compile Include="AddCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourseForm.Designer.cs">
+      <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScoreForm.Designer.cs">
+      <DependentUpon>AddScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentForm.Designer.cs">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvgScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvgScoreForm.Designer.cs">
+      <DependentUpon>AvgScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COURSE.cs" />
+    <Compile Include="EditCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourseForm.Designer.cs">
+      <DependentUpon>EditCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm01.Designer.cs">
+      <DependentUpon>MainForm01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageCourseForm.Designer.cs">
+      <DependentUpon>manageCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageScoreForm.Designer.cs">
+      <DependentUpon>ManageScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStudentsForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudentsForm2.Designer.cs">
+      <DependentUpon>ManageStudentsForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MY_DB.cs" />
+    <Compile Include="PrintCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintCourseForm.Designer.cs">
+      <DependentUpon>PrintCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintScoreForm.Designer.cs">
+      <DependentUpon>PrintScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintStudentForm.Designer.cs">
+      <DependentUpon>PrintStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCourseForm.Designer.cs">
+      <DependentUpon>RemoveCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveScoreForm.Designer.cs">
+      <DependentUpon>RemoveScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDocx.cs" />
+    <Compile Include="SCORE.cs" />
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Slide\Doc\Fields.cs" />
+    <Compile Include="StaticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticForm.Designer.cs">
+      <DependentUpon>StaticForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticResultForm.Designer.cs">
+      <DependentUpon>StaticResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT.cs" />
+    <Compile Include="studentsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentsListForm.Designer.cs">
+      <DependentUpon>studentsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDeleteStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDeleteStudentForm.Designer.cs">
+      <DependentUpon>UpdateDeleteStudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCourseForm.resx">
+      <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScoreForm.resx">
+      <DependentUpon>AddScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentForm.resx">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvgScoreForm.resx">
+      <DependentUpon>AvgScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourseForm.resx">
+      <DependentUpon>EditCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm01.resx">
+      <DependentUpon>MainForm01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageCourseForm.resx">
+      <DependentUpon>manageCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageScoreForm.resx">
+      <DependentUpon>ManageScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudentsForm2.resx">
+      <DependentUpon>ManageStudentsForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintCourseForm.resx">
+      <DependentUpon>PrintCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintScoreForm.resx">
+      <DependentUpon>PrintScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintStudentForm.resx">
+      <DependentUpon>PrintStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveCourseForm.resx">
+      <DependentUpon>RemoveCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveScoreForm.resx">
+      <DependentUpon>RemoveScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticForm.resx">
+      <DependentUpon>StaticForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticResultForm.resx">
+      <DependentUpon>StaticResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentsListForm.resx">
+      <DependentUpon>studentsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteStudentForm.resx">
+      <DependentUpon>UpdateDeleteStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MyDBDataSet.xsc">
+      <DependentUpon>MyDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyDBDataSet.xss">
+      <DependentUpon>MyDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyDBDataSet1.xsc">
+      <DependentUpon>MyDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MyDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MyDBDataSet1.xss">
+      <DependentUpon>MyDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nen54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam 2021-05-17 08-56-31-025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109861283-student-icon-education-concept-icon-with-settings-sign-student-icon-and-customize-setup-manage-proce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2196166.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2727129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\podium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam 2021-05-16 14-45-05-670.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Add-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student-icon-graduation-with-mortar-board-vector-19676166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clothing-Button-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course-folder-edit-icon-outline-style-vector-30268672.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88288-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\style-icons-system-intro-principles-intuitive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-First-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Previous-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Next-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Last-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam 2021-05-16 14-42-27-953.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-space-blue-circuits-digital-background_23-21488216997.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam 2021-05-16 23-48-09-463.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam 2021-05-16 23-48-09-4631.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-space-blue-circuits-digital-background_23-21488216994.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3982cc208873792337b423d9e7714b37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-space-blue-circuits-digital-background_23-21488216995.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy-space-blue-circuits-digital-background_23-21488216992.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3982cc208873792337b423d9e7714b316.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

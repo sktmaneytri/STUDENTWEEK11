@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblDeleteCourse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS Gothic, 16.2pt</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="score_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 167</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="id_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="&gt;&gt;id_box.Name" xml:space="preserve">
+    <value>id_box</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Add_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="Add_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;lblLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddScoreForm</value>
+  </data>
+  <data name="&gt;&gt;lblLabel.Name" xml:space="preserve">
+    <value>lblLabel</value>
+  </data>
+  <data name="&gt;&gt;description_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDeleteCourse.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="score_box.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="lblDeleteCourse.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="id_box.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 25</value>
+  </data>
+  <data name="&gt;&gt;lblDeleteCourse.Name" xml:space="preserve">
+    <value>lblDeleteCourse</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="Add_btn.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Name" xml:space="preserve">
+    <value>cancel_btn</value>
+  </data>
+  <data name="cancel_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 62</value>
+  </data>
+  <data name="&gt;&gt;lblDeleteCourse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 81</value>
+  </data>
+  <data name="lblLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Add_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 495</value>
+  </data>
+  <data name="lblDeleteCourse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 28</value>
+  </data>
+  <data name="&gt;&gt;lblDeleteCourse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;score_box.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 167</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 83</value>
+  </data>
+  <data name="cancel_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 495</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCourse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblDeleteCourse.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="lblLabel.Text" xml:space="preserve">
+    <value>Score:</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCourse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;score_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Select Courses:</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>535, 474</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblDeleteCourse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 19</value>
+  </data>
+  <data name="comboBoxCourse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 122</value>
+  </data>
+  <data name="&gt;&gt;cancel_btn.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Student id:</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 81</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="description_box.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;score_box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 25</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCourse.Name" xml:space="preserve">
+    <value>comboBoxCourse</value>
+  </data>
+  <data name="lblLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;description_box.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;score_box.Name" xml:space="preserve">
+    <value>score_box</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, -3</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="comboBoxCourse.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="comboBoxCourse.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt</value>
+  </data>
+  <data name="description_box.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="score_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="&gt;&gt;id_box.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Add_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 62</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AddScoreForm</value>
+  </data>
+  <data name="&gt;&gt;Add_btn.Name" xml:space="preserve">
+    <value>Add_btn</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="comboBoxCourse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 30</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 241</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 122</value>
+  </data>
+  <data name="cancel_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 25</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;description_box.Name" xml:space="preserve">
+    <value>description_box</value>
+  </data>
+  <data name="cancel_btn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="lblDeleteCourse.Text" xml:space="preserve">
+    <value>Add Score </value>
+  </data>
+  <data name="cancel_btn.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="description_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 179</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1150, 577</value>
+  </data>
+  <data name="&gt;&gt;description_box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="id_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 83</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;id_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="description_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 241</value>
+  </data>
+  <data name="lblLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Tai Le, 12pt</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCourse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>aa</value>
+  </metadata>
+</root>
